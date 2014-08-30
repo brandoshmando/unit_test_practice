@@ -9,8 +9,8 @@ class TestString < Test::Unit::TestCase
   def test_intersection
     string_one = "abc"
     string_two = "bcd"
-
-    assert_equal(intersection(string_one,string_two), ["b", "c"])
+    result = intersection(string_one,string_two)
+    assert_equal( result, ["b", "c"])
   end
   def test_hash_to_string
     assert_equal(stringify({a: 1, b: '2'}), "a = 1, b = 2")
