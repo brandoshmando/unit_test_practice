@@ -38,8 +38,8 @@ class TestString < Test::Unit::TestCase
   end
 
   def test_capped_names
-    name = "brandon"
-    expected = name.capitalize.to_a
-    assert_equal(expected, name_capper(name))
+    array = "brandon".split
+    expected = ["Brandon"]
+    assert_equal(expected, name_capper(array))
   end
 end

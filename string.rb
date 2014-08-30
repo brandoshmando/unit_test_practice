@@ -17,4 +17,5 @@ def oddities(array)
 end
 
 def name_capper(array)
+  array.map {|name| name.capitalize}
 end
