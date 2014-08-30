@@ -30,4 +30,10 @@ class TestString < Test::Unit::TestCase
       !Sleigh.new.auth("Clause", "Ho")
     end
   end
+
+  def test_oddities
+    array = [1,2,3,4,5,6,7,8,9]
+    expected = [1,3,5,7,9]
+    assert_equal(expected, oddities(array))
+  end
 end

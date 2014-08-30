@@ -11,3 +11,7 @@ class Sleigh
     name == "Santa Clause" && password == "Ho Ho!"
   end
 end
+
+def oddities(array)
+  array.select {|num| num % 2 != 0 }
+end
