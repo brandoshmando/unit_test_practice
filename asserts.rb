@@ -15,4 +15,19 @@ class TestString < Test::Unit::TestCase
   def test_hash_to_string
     assert_equal(stringify({a: 1, b: '2'}), "a = 1, b = 2")
   end
+
+  def test_sleigh_class
+    expected = Sleigh.new
+    assert_equal(expected.class, Sleigh)
+  end
+
+  def test_sleigh_auth_success
+    assert(Sleigh.new.auth("Santa Clause", "Ho Ho!"))
+  end
+
+  def test_sleigh_auth_fail
+    assert_block do
+      !Sleigh.new.auth("Clause", "Ho")
+    end
+  end
 end

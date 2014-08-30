@@ -5,3 +5,9 @@ end
 def stringify(hash)
   array = hash.map {|key, value| "#{key} = #{value}"}.join(', ')
 end
+
+class Sleigh
+  def auth(name,password)
+    name == "Santa Clause" && password == "Ho Ho!"
+  end
+end
