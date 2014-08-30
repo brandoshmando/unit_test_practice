@@ -12,4 +12,7 @@ class TestString < Test::Unit::TestCase
 
     assert_equal(intersection(string_one,string_two), ["b", "c"])
   end
+  def test_hash_to_string
+    assert_equal(stringify({a: 1, b: '2'}), "a = 1, b = 2")
+  end
 end
