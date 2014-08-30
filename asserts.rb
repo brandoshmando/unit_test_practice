@@ -7,10 +7,10 @@ class TestString < Test::Unit::TestCase
     assert_equal(expected, String)
   end
   def test_intersection
-    string_one = "abc"
-    string_two = "bcd"
+    string_one = "abcdefg"
+    string_two = "defghi"
     result = intersection(string_one,string_two)
-    assert_equal( result, ["b", "c"])
+    assert_equal( result, ["d", "e", "f", "g"])
   end
   def test_hash_to_string
     assert_equal(stringify({a: 1, b: '2'}), "a = 1, b = 2")
