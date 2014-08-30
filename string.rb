@@ -3,7 +3,7 @@ def intersection(string_one, string_two)
 end
 
 def stringify(hash)
-  array = []
-  hash.each_pair {|key, value| array << "#{key} = #{value}"}
+
+  array = hash.each_pair.map {|key, value| "#{key} = #{value}"}
   array.join(', ')
 end
