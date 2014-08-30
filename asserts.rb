@@ -36,4 +36,10 @@ class TestString < Test::Unit::TestCase
     expected = [1,3,5,7,9]
     assert_equal(expected, oddities(array))
   end
+
+  def test_capped_names
+    name = "brandon"
+    expected = name.capitalize.to_a
+    assert_equal(expected, name_capper(name))
+  end
 end

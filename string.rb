@@ -15,3 +15,6 @@ end
 def oddities(array)
   array.select {|num| num % 2 != 0 }
 end
+
+def name_capper(array)
+end
