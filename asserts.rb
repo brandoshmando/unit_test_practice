@@ -42,4 +42,11 @@ class TestString < Test::Unit::TestCase
     expected = ["Brandon"]
     assert_equal(expected, name_capper(array))
   end
+
+  def test_symbol_to_array
+    input = {a:1, b:2, c:3}
+    expected = [[:a, :b, :c], [1,2,3]]
+
+    assert_equal(expected, arrayable(input))
+  end
 end

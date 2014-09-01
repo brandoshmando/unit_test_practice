@@ -19,3 +19,11 @@ end
 def name_capper(array)
   array.map {|name| name.capitalize}
 end
+
+def arrayable(hash)
+  key_array = []
+  value_array = []
+
+  hash.each_pair {|key, value| key_array << key and value_array << value}
+  [key_array, value_array]
+end
