@@ -50,11 +50,31 @@ class TestString < Test::Unit::TestCase
     assert_equal(expected, arrayable(input))
   end
 
-  def test_cook_time
-    5.times do |i|
+  def test_cook_time_5_or_less
+    8.times do |i|
       expected = 5
       input = i + 1
-      assert_equal(expected, egg_boil(5))
+      assert_equal(expected, boil_time(5))
+    end
+  end
+
+  def test_cook_time_div_8
+    counter = 0
+    8.times do |i|
+      counter += 8
+      input = counter
+      expected = (i + 1) * 5
+      assert_equal(expected, boil_time(input))
+    end
+  end
+
+  def test_cook_time_more_than_5
+    counter = 8
+    5.times do |i|
+      counter += 1
+      input = counter
+      expected = 10
+      assert_equal(expected, boil_time(input))
     end
   end
 end

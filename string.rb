@@ -28,6 +28,13 @@ def arrayable(hash)
   [key_array, value_array]
 end
 
-def egg_boil
-
+def boil_time(eggs)
+  if eggs <= 8
+    5
+  elsif eggs % 8 == 0
+    (eggs / 8) * 5
+  else
+    batch = ((eggs - (eggs % 8)) / 8) + 1
+    batch * 5
+  end
 end
