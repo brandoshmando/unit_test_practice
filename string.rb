@@ -38,3 +38,10 @@ def boil_time(eggs)
     batch * 5
   end
 end
+
+def nth_tri_number(n)
+  n == 0 ? 0 : (n*n+n)/2
+end
+
+
+

@@ -77,4 +77,13 @@ class TestString < Test::Unit::TestCase
       assert_equal(expected, boil_time(input))
     end
   end
+
+  def test_nth_triangular_number
+      results = [0, 1, 3, 6, 10, 15]
+      6.times do |i|
+      input = i
+      expected = results[i]
+      assert_equal(expected, nth_tri_number(input))
+    end
+  end
 end
