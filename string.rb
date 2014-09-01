@@ -27,3 +27,7 @@ def arrayable(hash)
   hash.each_pair {|key, value| key_array << key and value_array << value}
   [key_array, value_array]
 end
+
+def egg_boil
+
+end
