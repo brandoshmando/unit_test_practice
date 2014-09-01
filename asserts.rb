@@ -49,4 +49,12 @@ class TestString < Test::Unit::TestCase
 
     assert_equal(expected, arrayable(input))
   end
+
+  def test_cook_time
+    5.times do |i|
+      expected = 5
+      input = i + 1
+      assert_equal(expected, egg_boil(5))
+    end
+  end
 end
