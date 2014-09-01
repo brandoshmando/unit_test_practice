@@ -87,3 +87,9 @@ class TestString < Test::Unit::TestCase
     end
   end
 end
+
+def test_sorted_gift_code
+  input = "abcdef"
+  expected = "cbdeaf"
+  assert_equal(expected, sort_gift_code(input))
+end

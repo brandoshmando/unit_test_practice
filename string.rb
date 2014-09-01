@@ -43,5 +43,8 @@ def nth_tri_number(n)
   n == 0 ? 0 : (n*n+n)/2
 end
 
+def sort_gift_code(string)
+  string.split('').sort.join
+end
 
 
