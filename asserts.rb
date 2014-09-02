@@ -107,6 +107,13 @@ class TestString < Test::Unit::TestCase
 
     assert_equal(expected, flatten_array(input))
   end
+
+  def test_longest_palindrome
+    input = "zvzyzzy"
+    expected = "yzzy"
+
+    assert_equal(expected, longest_palindrome(input))
+  end
 end
 
 

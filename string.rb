@@ -51,3 +51,15 @@ def flatten_array(array)
   array.length < 2 ? array : array.flatten
 end
 
+def longest_palindrome(str)
+  palindromes = []
+  (1..str.size).each do |length|
+    str.split('').each_cons(length) do |letters|
+      palindromes << letters.join if letters.join == letters.join.reverse
+    end
+  end
+  palindromes.max_by {|a| a.length}
+end
+longest_palindrome("zezyzzy")
+
+
