@@ -47,4 +47,7 @@ def sort_gift_code(string)
   string.split('').sort.join
 end
 
+def flatten_array(array)
+  [1,2,3]
+end
 

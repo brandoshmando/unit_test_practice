@@ -86,10 +86,24 @@ class TestString < Test::Unit::TestCase
       assert_equal(expected, nth_tri_number(input))
     end
   end
+
+
+  def test_sorted_gift_code
+    input = "cbdeaf"
+    expected = "abcdef"
+    assert_equal(expected, sort_gift_code(input))
+  end
+
+  def test_flatten_single_array
+    input = [1,2,3]
+    expected = [1,2,3]
+
+    assert_equal(expected, flatten_array(input))
+  end
 end
 
-def test_sorted_gift_code
-  input = "abcdef"
-  expected = "cbdeaf"
-  assert_equal(expected, sort_gift_code(input))
-end
+
+
+
+
+
