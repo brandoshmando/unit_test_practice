@@ -48,6 +48,6 @@ def sort_gift_code(string)
 end
 
 def flatten_array(array)
-  [1,2,3]
+  array.length < 2 ? array : array.flatten
 end
 
