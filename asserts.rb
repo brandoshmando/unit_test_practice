@@ -100,6 +100,13 @@ class TestString < Test::Unit::TestCase
 
     assert_equal(expected, flatten_array(input))
   end
+
+  def test_flatten_array_of_arrays
+    input = [[1,2,3], [4,5,6], [7,8,9]]
+    expected = [1,2,3,4,5,6,7,8,9]
+
+    assert_equal(expected, flatten_array(input))
+  end
 end
 
 
